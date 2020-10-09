@@ -1,2 +1,2 @@
 # jaymileigh
-Personlized Website to act as a CV of sorts
+Personlized Website to show some of the CSS?HTML skills I have developed. 

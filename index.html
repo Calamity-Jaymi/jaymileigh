@@ -20,7 +20,7 @@
   <div class="profile">
     <img id="jaymi" src="images/dorky-circle.png" alt="Jaymi Leigh" width="200px">
     <h2>Hello.</h2>
-    <p>Lorem ipsum dolor sit amet, vitae volutpat, dui conubia, dolor urna. Non auctor, montes nulla distinctio.</p>
+    <p>I am a former cook, present cat lover, and future web developer.</p>
   </div>
   <hr>
   <div class="skills">
@@ -28,12 +28,16 @@
     <div class="skill-row">
       <img class="personal-computer" src="images/personal-computer-1.png" alt="personal computer">
       <h3>Design and Development</h3>
-      <p>Lorem ipsum dolor sit amet, quis in duis, iaculis id felis. Consectetuer vestibulum, nunc urna lectus, erat ligula. Hendrerit nam, lectus ante, ut lorem eros.</p>
+      <p>I discovered front end web design when I was about 13. Designing profile pages with HTML and CSS on MySpace and other forum and fan pages for bands I loved.
+        I have always enjoyed designing web pages, but never knew that it was a career option for me until I was well into my 20's.
+        Now I am self-teaching myself again to pivot my future to bring my fun and challenges into my life.</p>
     </div>
     <div class="skill-row">
       <img class="cooking" src="images/cooking.png" alt="coding icon">
-      <h3>Lorem Ipsum Dolor</h3>
-      <p>Lorem ipsum dolor sit amet, mauris sed consectetuer. Etiam et eu, bibendum interdum, lacus quis mauris. Curabitur wisi, quisque vel eu, rutrum nam.</p>
+      <h3>Cooking</h3>
+      <p>Just being able to cook by feeling and heart, that gift runs in my family. For the last 12 years I have been in pursuit of the ultimate dream, running and owning my own food truck.
+        But after running a restaurant, designing the menu, cooking, bartending, and just doing it all on my own I have come to realize that it takes the joy out of cooking. Better to learn
+        early than before the investment, eh? At least I can still cook for the love of it.</p>
     </div>
   </div>
   <hr>
@@ -50,17 +54,31 @@
     <a class="footer-link" href="https://www.appbrewery.co/">Website</a>
     <p>© 2020 Jaymi Leigh.</p>
   </div>
-  <div id="icon-credit">
-    Icons made by:
+  <button type="button" class="collapsible">Icons made by:</button>
+  <div class="icon-credit">
     <br>
     <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
     <br>
     <a href="https://www.flaticon.com/authors/eucalyp" title="Eucalyp">Eucalyp</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
     <br>
     <a href="https://www.flaticon.com/free-icon/cooking_3023254?term=cooking&page=2&position=82" title="smalllikeart">smalllikeart</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
-
   </div>
+  <script type="text/javascript">
+  var coll= document.getElementsByClassName("collapsible");
+  var i;
 
+  for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var iconCredit = this.nextElementSibling;
+      if (iconCredit.style.display === "block") {
+        iconCredit.style.disply = "none";
+      } else {
+        iconCredit.style.display = "block";
+      }
+    });
+  }
+  </script>
 
 </body>
 
